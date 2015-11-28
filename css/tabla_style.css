@@ -1,0 +1,51 @@
+/* ===========================
+   ======= tables style ======== 
+   =========================== */
+
+.tbl-clasificacion { 
+  width: 95% ; 
+  text-align:center; 
+  border-collapse:collapse; 
+  margin:10px auto; 
+  color: #000; 
+  position: relative;
+  font-style: bold;
+  font-size: 15px; 
+  background: rgba(18, 140,214 .1);
+ top: 25px;
+}
+
+.tbl-clasificacion thead th {background:rgba(185,184,205,0.8); margin-top: 50px;}
+.tbl-clasificacion tbody td, .tbl-clasificacion thead th {border-right:1px solid #696767; padding:6px;}
+.tbl-clasificacion .col-equipos {text-align:left; padding:4px 10px}
+.tbl-clasificacion .col-pt {background:rgba(40,42,41,.6); color: #fff;}
+.tbl-clasificacion tr:nth-child(even) {background: rgba(166,165,175,0.3 );}
+.tbl-clasificacion tr:nth-child(odd) {background:rgba(176,188,221,0.1); }
+
+.table-container{
+
+    width: 80%;
+    height: 40em;
+    background:rgba(177,176,188,0.05);
+    position: relative;
+    top: 180px;
+    margin: 0 auto;
+    border-radius: 5px;
+    
+  
+  }
+  thead th{
+  	background-color:  rgba(176,188,221,0.9)
+  }
+
+/*
+
+h1{
+	font-weight: 100;
+	color: #726c6c;
+	font-family: Myriad pro;
+	padding: 5px;
+	background: transparent;
+	text-align: center;
+	margin: 5px;
+}*/

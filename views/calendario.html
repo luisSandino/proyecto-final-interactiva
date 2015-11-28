@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="allCrFutbol">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/calendario_style.css">
+
+	</head>
+	<body  ng-controller="CalendarioController">
+	
+		<article class="calendario">
+			<h1>CREA TU CALENDARIO</h1>
+			<h3>Ingresa los equipos</h3>
+
+			<div class="row">
+		 		<section class="col-lg-8">
+			      <ul class="list-unstyled">
+			        <li ng-repeat="team in teams">
+			          {{team.name}}
+			        </li>
+			      </ul>
+					<div class="input-group input-group-lg">
+					  <input type="text" class="form-control" placeholder="Enter team's name" ng-model="teamToAdd.name" aria-describedby="sizing-addon1">
+					  <span class="input-group-btn">
+					  	<button  ng-click="addTeam()" class="btn btn-success btn-lg " type="button"  aria-haspopup="true" aria-expanded="false"> Add team</button>
+					  </span>
+					</div>
+					
+				</section>
+	      	</div>
+		    
+		</article>
+		<article class= "calendario-info">
+			<section class="col-sm-4">
+		      <ol ng-if="teams.length > 0">
+		        <li ng-repeat="game in games()">
+		          {{game.teamA.name + ' vs ' + game.teamB.name}}
+		        </li>
+		      </ol>
+		    </section>
+		</article>
+	</body>
+</html>
+

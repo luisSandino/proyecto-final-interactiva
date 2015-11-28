@@ -1,0 +1,31 @@
+.calendario{
+	width: 40%;
+    height: 35em;
+    background:rgba(177,176,188,0.08);
+    position: relative;
+    top: 180px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 5px;
+
+}
+
+.input-group{
+	padding: 5px 15px;
+}
+.calendario-info{
+	width: 55%;
+    height: 40em;
+    background:rgba(177,176,188,0.08);
+    position: relative;
+    top: 180px;
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+
+
+}
+#btn-calendario{
+	float: right;
+	margin-right: 15px;
+}
