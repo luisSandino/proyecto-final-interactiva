@@ -30,7 +30,7 @@ controllers.controller('CalendarioController', ['$scope', function($scope, myFac
   
   $scope.addTeam = function () {
     $scope.teams.push($scope.teamToAdd);
-    $scope.teamToAdd = {name:''};
+    $scope.teamToAdd = {name:'', provincia:'san jose'};
   };
   
   $scope.games = function () {

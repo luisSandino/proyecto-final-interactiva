@@ -1,7 +1,7 @@
 var myFactory= angular.module('allCrFutbol.myFactory',[]);
 
 
-myFactory.factory('myFactory','CalendarioController', function($scope  ) {
+/*myFactory.factory('myFactory','CalendarioController', function($scope  ) {
     $scope.teams= [];
     $scope.teamToAdd= {name: '' };
 
@@ -10,7 +10,7 @@ myFactory.factory('myFactory','CalendarioController', function($scope  ) {
 		$scope.teamToAdd= {name: ''};
 	};
 
-/*$scope.games = function () {
+$scope.games = function () {
     
     var gamesList = [];
     
@@ -24,11 +24,11 @@ myFactory.factory('myFactory','CalendarioController', function($scope  ) {
     
     return gamesList;
   
-  }*/
+  
 
     return name;
 });
-
+}*/
 		
 
 	
