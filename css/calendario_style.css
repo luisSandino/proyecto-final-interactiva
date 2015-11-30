@@ -1,13 +1,15 @@
 .calendario{
 	width: 40%;
     height: 35em;
-    background:rgba(177,176,188,0.08);
+    background:rgba(6,135,244,0.15);
     position: relative;
     top: 180px;
     float: left;
     margin-left: 20px;
     border-radius: 5px;
-
+    overflow: scroll;
+    text-align: left;
+    border: 1px solid #fff;
 }
 
 .input-group{
@@ -15,17 +17,25 @@
 }
 .calendario-info{
 	width: 55%;
-    height: 40em;
-    background:rgba(177,176,188,0.08);
+    height: 35em;
+    background:rgba(6,135,244,0.15);
     position: relative;
     top: 180px;
     float: right;
     margin-right: 20px;
     border-radius: 5px;
+    text-align: left;
+    padding: 40px;
+    border: 1px solid #fff;
+
 
 
 }
 #btn-calendario{
 	float: right;
 	margin-right: 15px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }

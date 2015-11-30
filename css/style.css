@@ -29,6 +29,8 @@ body {
   height: 100%;
   background-image: url(SantiagoBernabeu.jpg);
   background-repeat: no-repeat;
+  overflow:  hidden;
+  font-size: 18px;
   
 }
 body {

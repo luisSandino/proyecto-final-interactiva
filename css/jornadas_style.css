@@ -1,8 +1,19 @@
 .jor-container{
-   width: 65%;
-    height: 40em;
-    background:rgba(177,176,188,0.08);
+   width: 80%;
+    height: 35em;
+    background:rgba(6,135,244,0.15);
     position: relative;
     top: 180px;
     margin: 0 auto;
+    border: 1px solid #fff;
+    padding: 40px;
+    text-align: left;;
+}
+.form-control{
+	width: 50%;
+
+
+}
+select>option{
+	background:#6cbafb;
 }

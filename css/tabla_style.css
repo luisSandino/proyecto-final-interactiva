@@ -7,7 +7,7 @@
   text-align:center; 
   border-collapse:collapse; 
   margin:10px auto; 
-  color: #000; 
+
   position: relative;
   font-style: bold;
   font-size: 15px; 
@@ -25,12 +25,13 @@
 .table-container{
 
     width: 80%;
-    height: 40em;
-    background:rgba(177,176,188,0.05);
+    height: 35em;
+    background:rgba(6,135,244,0.15);
     position: relative;
     top: 180px;
     margin: 0 auto;
     border-radius: 5px;
+    border: 1px solid #fff;
     
   
   }
