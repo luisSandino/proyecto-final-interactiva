@@ -17,20 +17,21 @@
 			
 		
 			<section class="ingreso-calendario col-lg-8">
-				<div class=" col-lg-8 input-group input-group-lg ">
+				<form class=" col-lg-8 input-group input-group-lg " ng-submit="addTeam()">
 					  <input type="text" class="form-control" placeholder="Enter team's name" ng-model="teamToAdd.name" aria-describedby="sizing-addon1">
 					  <span class="input-group-btn">
-					  	<button  ng-click="addTeam()" class="btn btn-success btn-lg " type="button"  aria-haspopup="true" aria-expanded="false"> Add team</button>
-					  </span>
-					</div>
+					  	<input  type="submit" class="btn btn-success btn-lg "  value="Add team" aria-haspopup="true" aria-expanded="false"> </input>
+					  </span >
+					</form>
 			</section>
 
 			<section class=" ingreso-equipos col-lg-4">
 			      <ol >
 			        <li ng-repeat="team in teams" >
-			          {{team.name}}
+			          {{team.name}} {{team.provincia}}
 			       
 			        </li>
+			        
 			      </ol>
 			</section>
 		</article>   
