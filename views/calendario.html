@@ -18,28 +18,30 @@
 		
 			<section class="ingreso-calendario col-lg-8">
 				<form class=" col-lg-8 input-group input-group-lg " ng-submit="addTeam()">
-					  <input type="text" class="form-control" placeholder="Enter team's name" ng-model="teamToAdd.name" aria-describedby="sizing-addon1">
-					  <span class="input-group-btn">
-					  	<input  type="submit" class="btn btn-success btn-lg "  value="Add team" aria-haspopup="true" aria-expanded="false"> </input>
-					  </span >
+					<input type="text" class="form-control" placeholder="Enter team's name" id="basic-url" ng-model="new.name" aria-describedby="sizing-addon1" required> 
+					<input type="text" class="form-control" placeholder="Enter URL's image" id="basic-url" ng-model="new.image" aria-describedby="sizing-addon1" required >					 
+				  	<input  type="submit" ng-click="send(new)" class="btn btn-calendario btn-success btn-lg "  value="Add team" aria-haspopup="true" aria-expanded="false"> </input>
+					 
 					</form>
 			</section>
 
 			<section class=" ingreso-equipos col-lg-4">
-			      <ol >
+				<h3>Mis equipos</h3>
+		        <ol >
 			        <li ng-repeat="team in teams" >
-			          {{team.name}} {{team.provincia}}
-			       
+			          {{team.name}}
 			        </li>
 			        
-			      </ol>
+			       
+		       </ol>
 			</section>
 		</article>   
 		
 		<article class= " calendario-info row container table-responsive "  >
-			<section class="col-lg-12" >
+			<section class="col-lg-12 sorteo-partidos" >
+			<h3>Encuentros a realizar</h3>
 		      <ul ng-if="teams.length > 0" class="list-unstyled">
-		      <h3>Encuentros a realizar</h3>
+		      
 		        <li ng-repeat="game in games()" >
 		          {{game.teamA.name + ' vs ' + game.teamB.name}}
 		        </li>

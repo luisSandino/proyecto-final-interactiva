@@ -1,4 +1,4 @@
-var application = angular.module('allCrFutbol',['ngRoute','allCrFutbol.controllers','allCrFutbol.myFactory']);
+var application = angular.module('allCrFutbol',['ngRoute','firebase','allCrFutbol.controllers','allCrFutbol.myFactory']);
 
  application.config(['$routeProvider', function($routeProvider) {
 	$routeProvider

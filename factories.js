@@ -1,34 +1,28 @@
-var myFactory= angular.module('allCrFutbol.myFactory',[]);
+var myFactory= angular.module('allCrFutbol.myFactory',['firebase']);
+
+ myFactory.factory( '$team', function($firebase,$firebaseArray,$firebaseObject){
+
+var fireRef = new Firebase('https://tabla-posiciones.firebaseio.com/');
+var teams = $firebaseArray(fireRef.child('teams')); 
 
 
-/*myFactory.factory('myFactory','CalendarioController', function($scope  ) {
-    $scope.teams= [];
-    $scope.teamToAdd= {name: '' };
-
-    var addTeam = function() {
-		$scope.teams.push($scope.teamToAdd);
-		$scope.teamToAdd= {name: ''};
-	};
-
-$scope.games = function () {
-    
-    var gamesList = [];
-    
-    for (var i = 0; i < $scope.teams.length; i++) {
-      for (var j = 0; j < $scope.teams.length; j++) {
-        if($scope.teams[i] != $scope.teams[j]) {
-          gamesList.push({teamA:$scope.teams[i], teamB:$scope.teams[j]});
-        }
-      }
-    }
-    
-    return gamesList;
   
-  
+   var addTeam = function (team) {
+    
+    return teams.$add(team);
+  };
 
-    return name;
+
+  return {
+    all: teams, 
+    addTeam: addTeam
+  };
+
 });
-}*/
-		
+  
 
-	
+
+
+
+
+  

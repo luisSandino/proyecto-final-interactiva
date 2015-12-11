@@ -14,6 +14,7 @@
 
 .input-group{
 	padding: 5px 15px;
+
 }
 .calendario-info{
 	width: 55%;
@@ -31,11 +32,36 @@
 
 
 }
-#btn-calendario{
-	float: right;
-	margin-right: 15px;
-}
+
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+#basic-url{
+    margin: 14px;
+    border-radius: 8px;
+}
+.btn-calendario{
+    margin-left: 13px;
+}
+.ingreso-equipos{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 200;s
+    padding: 50px;
+    background:rgba(35,40,39, .7);
+    border-radius: 8px;
+    height: auto;
+}
+
+.sorteo-partidos{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 50px;
+    background:rgba(35,40,39, .7);
+    border-radius: 8px;
+    height: auto;
+    
 }
