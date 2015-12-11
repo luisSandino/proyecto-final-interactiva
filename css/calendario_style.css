@@ -26,7 +26,7 @@
     margin-right: 20px;
     border-radius: 5px;
     text-align: left;
-    padding: 40px;
+    padding: 60px;
     border: 1px solid #fff;
 
 
@@ -48,8 +48,8 @@
 .ingreso-equipos{
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    font-weight: 200;s
-    padding: 50px;
+    font-weight: 200;
+    padding: 30px;
     background:rgba(35,40,39, .7);
     border-radius: 8px;
     height: auto;
@@ -64,4 +64,13 @@
     border-radius: 8px;
     height: auto;
     
+}
+li{
+    padding: 10px;
+}
+#btn-eliminate{
+  float: right;
+}
+hr{
+   border:dotted;
 }

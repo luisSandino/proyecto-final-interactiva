@@ -12,11 +12,11 @@
 		<article class="calendario row container table-responsive "  >
 			<div class="titulos-calendario col-lg-12">
 				<h1>CREA TU CALENDARIO</h1>
-				<h3>Ingresa los equipos</h3>
+				<h2>Ingresa los equipos</h2>
 			</div>
 			
 		
-			<section class="ingreso-calendario col-lg-8">
+			<section class="ingreso-calendario col-md-6">
 				<form class=" col-lg-8 input-group input-group-lg " ng-submit="addTeam()">
 					<input type="text" class="form-control" placeholder="Enter team's name" id="basic-url" ng-model="new.name" aria-describedby="sizing-addon1" required> 
 					<input type="text" class="form-control" placeholder="Enter URL's image" id="basic-url" ng-model="new.image" aria-describedby="sizing-addon1" required >					 
@@ -25,13 +25,13 @@
 					</form>
 			</section>
 
-			<section class=" ingreso-equipos col-lg-4">
+			<section class=" ingreso-equipos col-md-6">
 				<h3>Mis equipos</h3>
 		        <ol >
 			        <li ng-repeat="team in teams" >
-			          {{team.name}}
+			          {{team.name}}<button id ="btn-eliminate"ng-click="removeTeam(team)"class="btn btn-danger"><small>Eliminate</small></button><hr>
 			        </li>
-			        
+	        
 			       
 		       </ol>
 			</section>
@@ -39,7 +39,7 @@
 		
 		<article class= " calendario-info row container table-responsive "  >
 			<section class="col-lg-12 sorteo-partidos" >
-			<h3>Encuentros a realizar</h3>
+			<h2>Partidos a jugar</h2>
 		      <ul ng-if="teams.length > 0" class="list-unstyled">
 		      
 		        <li ng-repeat="game in games()" >

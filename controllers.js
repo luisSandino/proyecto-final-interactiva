@@ -13,7 +13,12 @@ controllers.controller('TablaController',  ['$scope', function($scope, myFactory
 
 controllers.controller('JornadasController', function($scope,$team ){
 
-	
+	 $scope.teams= $team.all;
+
+  $scope.send = function(team) {
+    $team.addTeam(team);
+  };
+  
 
 });
 
@@ -24,14 +29,13 @@ controllers.controller('CalendarioController', function($scope,$team  ){
 
   $scope.send = function(team) {
     $team.addTeam(team);
+   
+  };
+  $scope.removeTeam = function(toRemove) {
+    $scope.teams.$remove(toRemove);
   };
   
- /* $scope.teamToAdd = {name:''};
-  
-  $scope.addTeam = function () {
-    $scope.teams.push($scope.teamToAdd);
-    $scope.teamToAdd = {name:''};
-  };*/
+ 
   
   $scope.games = function () {
     
@@ -51,37 +55,3 @@ controllers.controller('CalendarioController', function($scope,$team  ){
 	
 });
 
-/*
-var myGrocery = angular.module('myGrocery', ['firebase']);
-
-myGrocery.controller('GroceryListController',function GroceryListController($scope, $firebaseArray){
-
-  var fireRef = new Firebase('https://groceryappsandino.firebaseio.com');
-
-  $scope.items = $firebaseArray(fireRef);
-  $scope.newItem = {name:'', quantity:0};
-
-  //Add Item
-  $scope.addItem = function() {
-    $scope.items.$add($scope.newItem);
-    $scope.newItem = {name:'', quantity:0};
-    // for Local Storage
-    // Just Serialize object and save in LocalStorage
-  };
-
-
-  //Remove Item
-  $scope.removeItem = function(toRemove) {
-    $scope.items.$remove(toRemove);
-  };
-
-
-  //Update Item
-  $scope.updateItem = function(toUpdate, newName, newQuantity) {
-    toUpdate.name = newName;
-    toUpdate.quantity = newQuantity;
-    $scope.items.$save(toUpdate);
-  };
-
-
-});*/
