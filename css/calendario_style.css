@@ -46,23 +46,25 @@
     margin-left: 13px;
 }
 .ingreso-equipos{
+    overflow: scroll;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 200;
     padding: 30px;
     background:rgba(35,40,39, .7);
     border-radius: 8px;
-    height: auto;
+    height: 450px;
 }
 
 .sorteo-partidos{
+    overflow: scroll;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 200;
     padding: 50px;
     background:rgba(35,40,39, .7);
     border-radius: 8px;
-    height: auto;
+    height: 550px;
     
 }
 li{
