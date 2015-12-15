@@ -14,8 +14,11 @@
   background: rgba(18, 140,214 .1);
  top: 25px;
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 
-.tbl-clasificacion thead th {background:rgba(185,184,205,0.8); margin-top: 50px;}
+.tbl-clasificacion thead th {background:rgba(185,184,205,0.8); margin-top: 50px; }
 .tbl-clasificacion tbody td, .tbl-clasificacion thead th {border-right:1px solid #696767; padding:6px;}
 .tbl-clasificacion .col-equipos {text-align:left; padding:4px 10px}
 .tbl-clasificacion .col-pt {background:rgba(40,42,41,.6); color: #fff;}
@@ -23,7 +26,7 @@
 .tbl-clasificacion tr:nth-child(odd) {background:rgba(176,188,221,0.1); }
 
 .table-container{
-
+    overflow: scroll;
     width: 80%;
     height: 35em;
     background:rgba(6,135,244,0.15);

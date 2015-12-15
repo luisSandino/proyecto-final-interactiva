@@ -29,7 +29,8 @@
 				<h3>Mis equipos</h3>
 		        <ol id="scrollEq">
 			        <li ng-repeat="team in teams" >
-			          {{team.name}}<button id ="btn-eliminate"ng-click="removeTeam(team)"class="btn btn-danger"><small>Eliminate</small></button><hr>
+			    		<img ng-src="{{team.image}}" height="25px" width="25px">
+		          		{{team.name}}<button id ="btn-eliminate"ng-click="removeTeam(team)"class="btn btn-danger"><small>Eliminate</small></button><hr>
 			        </li>
 	        
 			       

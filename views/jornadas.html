@@ -8,14 +8,9 @@
 	<body ng-controller="JornadasController">
 		<div class="jor-container ">
 		<h1>ESCOJA UN EQUIPO</h1>
-			<select  class="form-control" ng-model="new.name">
-			  <option value="{{team.name}}"></option>
-			  <option value="jor2">Equipo 2</option>
-			  <option value="jor3">Equipo 3</option>
-			  <option value="jor4">Equipo 4</option>
-			  <option value="jor5">Equipo 5</option>
-			  <option value="jor6">Equipo 6</option>
-			  <option value="jor7">Equipo 7</option>
+			<select  class="form-control" >
+			  <option value="" ng-repeat="team in teams">{{team.name}}</option>
+			  
 			</select>
 		</div>
 	</body>

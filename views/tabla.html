@@ -12,7 +12,7 @@
 	<div class= "table-container ">
 		<h1>TABLA DE POSICIONES DE PRIMERA DIVISIÓN</h1>
 		<table class="tbl-clasificacion table" ng-controller="TablaController">
-		    <thead>
+		    <thead >
 		      <tr>
 		        <th>POS</th>
 		        <th class="col-equipos">EQUIPOS</th>
@@ -26,12 +26,12 @@
 		        <th class="col-pt">PUNTOS</th>
 		      </tr>
 		    </thead>
-   			<tbody>
-			 	<tr ng-model="teamToAdd.name">
-				    <td>1</td>
+   			<tbody >
+			 	<tr ng-repeat="team in teams">
+				    <td>{{teams.length}}</td>
 				    <td class="col-equipos">
-				    	<img src="imgs\logo-alajuelense.png" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	ALAJUELENSE
+				    	<img ng-src="{{team.image}}" height="25px" width="25px">
+				    	{{team.name}}
 				    </td>
 				    <td>7</td>
 				    <td>2</td>
@@ -42,171 +42,7 @@
 				    <td>5</td>
 				    <td class="col-pt">9</td>
 		    	</tr>
-		    	<tr>
-				    <td>2</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\csh.jpg" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	HEREDIA   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>3</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\saprissa_logo.jpg" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	SAPRISSA  
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>4</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\cartago_logo.jpg" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	CARTAGO   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>5</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\ucr.png" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	UCR   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>6</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\carmelita.png" width="20px" height="20px" border="0" style="vertical-align: middle;"> 
-				    	CARMELITA  
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>7</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\santos.png" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	SANTOS    
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>8</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\liberia.jpg" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	LIBERIA FC   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>9</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\belen.jpg" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	BELEN   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>10</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\perez.png" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	PEREZ ZELEDON   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>11</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\uruguay.jpg" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	URUGUAY   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
-		    	<tr>
-				    <td>12</td>
-				    <td class="col-equipos">
-				    	<img src="imgs\limon.jpg" width="20px" height="20px" border="0" style="vertical-align: middle;">
-				    	LIMON FC   
-				    </td>
-				    <td>7</td>
-				    <td>2</td>
-				    <td>3</td>
-				    <td>2</td>
-				    <td>2</td>
-				    <td>4</td>
-				    <td>5</td>
-				    <td class="col-pt">9</td>
-		    	</tr>
+		    	
          	 </tbody>
 		</table>
 </div>

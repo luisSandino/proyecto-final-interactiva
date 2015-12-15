@@ -7,9 +7,14 @@ controllers.controller('InicioController', ['$scope', function($scope, myFactory
 	
 }]);
 
-controllers.controller('TablaController',  ['$scope', function($scope, myFactory){
+controllers.controller('TablaController', function($scope, $team){
+   $scope.teams= $team.all;
+
+  $scope.send = function(team) {
+    $team.addTeam(team);
+  };
 	
-}]);
+});
 
 controllers.controller('JornadasController', function($scope,$team ){
 
@@ -29,8 +34,12 @@ controllers.controller('CalendarioController', function($scope,$team  ){
 
   $scope.send = function(team) {
     $team.addTeam(team);
+    
    
   };
+
+  
+
   $scope.removeTeam = function(toRemove) {
     $scope.teams.$remove(toRemove);
   };
